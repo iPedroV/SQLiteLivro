@@ -63,16 +63,19 @@ namespace SQLiteLivro
         {
             toque = false;
             Livro livro = new Livro();
-            livro.titulo = txtTitulo.Text.Trim();
-            livro.autor = txtAutor.Text.Trim();
-            livro.editora = txtEditora.Text.Trim();
-            livro.ano = txtAno.Text.Trim();
+            livro.Titulo = txtTitulo.Text.Trim();
+            livro.Autor = txtAutor.Text.Trim();
+            livro.Editora = txtEditora.Text.Trim();
+            livro.Ano = txtAno.Text.Trim();
 
             if (!string.IsNullOrEmpty(txtTitulo.Text))
             {
                 await _dbContext.InsertAsync(livro);
                 _livros.Add(livro);
                 txtTitulo.Text = "";
+                txtAutor.Text = "";
+                txtEditora.Text = "";
+                txtAno.Text = "";
             }
             else
             {
@@ -86,7 +89,7 @@ namespace SQLiteLivro
         {
             if (toque == true)
             {
-                livroSelecionado.titulo = txtTitulo.Text.Trim();
+                livroSelecionado.Titulo = txtTitulo.Text.Trim();
                 if (!string.IsNullOrEmpty(txtTitulo.Text))
                 {
                     await _dbContext.UpdateAsync(livroSelecionado);
@@ -135,7 +138,7 @@ namespace SQLiteLivro
         {
             toque = true;
             livroSelecionado = e.Item as Livro;
-            txtTitulo.Text = livroSelecionado.titulo;
+            txtTitulo.Text = livroSelecionado.Titulo;
 
         }
     }
