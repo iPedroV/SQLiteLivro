@@ -57,7 +57,7 @@ namespace SQLiteLivro.model
             {
                 if (_autor == value)
                     return;
-                _titulo = value;
+                _autor = value;
                 OnPropertyChanged(nameof(Autor));
             }
         }
