@@ -54,7 +54,7 @@ namespace SQLiteLivro
             await _dbContext.CreateTableAsync<Livro>();
             var livros = await _dbContext.Table<Livro>().ToListAsync();
             _livros = new ObservableCollection<Livro>(livros);
-            lstvUsuarios.ItemsSource = _livros;
+            lstvLivros.ItemsSource = _livros;
 
             base.OnAppearing();
         }

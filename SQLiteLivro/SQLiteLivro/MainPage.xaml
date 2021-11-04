@@ -34,7 +34,7 @@
             </StackLayout>
             <Label Text="Lista de Usuários" Margin="5,20,5,5" HorizontalTextAlignment="Center"
                    FontSize="20" FontAttributes="Bold"/>
-            <ListView x:Name="lstvUsuarios" BackgroundColor="#c1d6e9" 
+            <ListView x:Name="lstvLivros" BackgroundColor="#c1d6e9" 
                   HasUnevenRows="True"
                   SeparatorColor="Blue"
                       ItemTapped="lstvUsuarios_ItemTapped">
