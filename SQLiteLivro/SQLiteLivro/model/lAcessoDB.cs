@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SQLiteLivro
 {
-    interface lAcessoDB
+    public interface lAcessoDB
     {
         SQLiteAsyncConnection GetConnection();
     }

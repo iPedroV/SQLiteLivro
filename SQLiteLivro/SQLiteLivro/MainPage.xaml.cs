@@ -101,6 +101,7 @@ namespace SQLiteLivro
                     txtEditora.Text = "";
                     txtAno.Text = "";
                     toque = false;
+                    
                 }
                 else
                 {
@@ -129,6 +130,7 @@ namespace SQLiteLivro
                     txtEditora.Text = "";
                     txtAno.Text = "";
                     toque = false;
+
                 }
                 else
                 {

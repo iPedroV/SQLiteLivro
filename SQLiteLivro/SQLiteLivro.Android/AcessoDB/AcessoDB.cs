@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using SQLiteLivro.model;
 
 
 [assembly: Xamarin.Forms.Dependency(typeof(AcessoDB))]
